@@ -2,8 +2,8 @@ import pytorch_lightning as pl
 import torch
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
-from data_module import AnimationTypesDatamodule
-from EfficientNet import AnimationEffNet
+from animations_data_module import AnimationTypesDatamodule
+from model.eff_net import AnimationEffNet
 
 
 if __name__ == "__main__":

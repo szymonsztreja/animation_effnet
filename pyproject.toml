@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "sharing-model"
+version = "0.1.0"
+description = ""
+authors = ["szymonsztreja <s26048@pjwstk.edu.pl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytorch-lightning = "^2.3.3"
+torch = {version = "^2.3.1+cu121", source = "pytorch"}
+torchvision = "^0.18.1"
+numpy = "<2.0.0"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

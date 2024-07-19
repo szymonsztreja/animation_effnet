@@ -1,3 +1,9 @@
+import pytorch_lightning as pl
+from torch import Generator
+from torch.utils.data import DataLoader, random_split
+from torchvision import transforms
+from torchvision.datasets import ImageFolder
+
 class AnimationTypesDatamodule(pl.LightningDataModule):
   def __init__(self, batch_size = 32):
     super().__init__()
