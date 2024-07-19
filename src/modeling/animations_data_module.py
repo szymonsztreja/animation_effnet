@@ -17,7 +17,7 @@ class AnimationTypesDatamodule(pl.LightningDataModule):
                                 ])
 
 
-    dataset = ImageFolder(root='animation_types/animation-types', transform=transform)
+    dataset = ImageFolder(root='data/animation-types', transform=transform)
 
     seed = Generator().manual_seed(42)
     train_size = int(0.8 * len(dataset))

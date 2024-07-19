@@ -6,7 +6,7 @@ authors = ["szymonsztreja <s26048@pjwstk.edu.pl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 pytorch-lightning = "^2.3.3"
 torch = {version = "^2.3.1+cu121", source = "pytorch"}
 torchvision = "^0.18.1"
