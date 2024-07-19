@@ -2,11 +2,11 @@ import pytorch_lightning as pl
 import torch
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
-from animations_data_module import AnimationTypesDatamodule
+from modeling.animations_data_module import AnimationTypesDatamodule
 from model.eff_net import AnimationEffNet
 
 
-if __name__ == "__main__":
+def training():
     dm = AnimationTypesDatamodule()
     dm.setup()
     num_classes = len(dm.train_dataset.dataset.classes)
